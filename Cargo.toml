@@ -1,6 +1,6 @@
 [package]
 name = "termlight"
-version = "0.2.0"
+version = "1.0.0"
 authors = ["Kesavan Yogeswaran <hikes@google.com>"]
 edition = "2018"
 license = "Apache-2.0"
@@ -9,7 +9,7 @@ documentation = "https://github.com/kesyog/termlight"
 homepage = "https://github.com/kesyog/termlight"
 keywords = ["light", "white"]
 categories = ["command-line-utilities"]
-description = "A cheap key/fill light replacement in the terminal"
+description = "Whiten up your terminal to use as a cheap key/fill light replacement for video conferencing"
 
 [dependencies]
 crossterm = "0.19.0"
