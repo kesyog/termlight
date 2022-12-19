@@ -1,6 +1,6 @@
 # termlight 🧑‍💻💡
 
-[![build status](https://img.shields.io/github/workflow/status/kesyog/termlight/Build?style=flat-square)](https://github.com/kesyog/termlight/actions/workflows/build.yml)
+[![build status](https://img.shields.io/github/actions/workflow/status/kesyog/termlight/build.yml?branch=main&style=flat-square)](https://github.com/kesyog/termlight/actions/workflows/build.yml)
 [![crates.io](https://img.shields.io/crates/v/termlight?style=flat-square)](https://crates.io/crates/termlight)
 [![Apache 2.0 license](https://img.shields.io/crates/l/termlight?style=flat-square)](./LICENSE)
 
