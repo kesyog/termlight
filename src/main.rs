@@ -29,9 +29,9 @@ use crossterm::{
     event::{self, Event},
     style::{Color, Colors, SetColors},
     terminal::{self, Clear, ClearType},
-    ExecutableCommand, Result,
+    ExecutableCommand,
 };
-use std::io::{self, Write};
+use std::io::{self, Result, Write};
 
 /// Enable light by enabling a white background in an alternate terminal window
 fn enable_lighting() -> Result<()> {
@@ -77,8 +77,8 @@ fn main() -> Result<()> {
                 io::stdout().execute(Clear(ClearType::All))?;
                 print_instructions()?;
             }
-            Event::Key(_) => break,
-            Event::Mouse(..) => (),
+            Event::Key(_) | Event::Paste(_) => break,
+            Event::Mouse(..) | Event::FocusGained | Event::FocusLost => (),
         }
     }
     disable_lighting()?;
